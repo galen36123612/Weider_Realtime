@@ -228,6 +228,16 @@
             justify-content: center;
             align-items: center;
             padding: 20px;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 80px;
+            height: auto;
+            z-index: 10;
         }
 
         .product-container {
@@ -325,6 +335,12 @@
                 padding: 10px;
             }
 
+            .logo {
+                width: 60px;
+                top: 15px;
+                left: 15px;
+            }
+
             .header {
                 margin-bottom: 30px;
             }
@@ -373,6 +389,8 @@
     </style>
 </head>
 <body>
+    <img src="Weider_logo.jpeg" alt="Weider Logo" class="logo">
+    
     <div class="product-container">
         <div class="product-card" onclick="redirectToSleep()">
             <img src="Weider_sleep.png" alt="" class="product-image">
